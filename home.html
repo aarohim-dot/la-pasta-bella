@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - La Pasta Bella</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #8d4a43, #ff7043); /* background color gradient */
+      background-size: 400% 400%;
+      animation: bgShift 15s ease infinite;
+      color: white;
+    }
+    @keyframes bgShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0,0,0,0.6); /* dark overlay for readability */
+    }
+    header h1 {
+      font-size: 3em;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(0,0,0,0.6); /* semi-transparent background */
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .cta {
+      text-align: center;
+      margin: 40px;
+    }
+    .cta button {
+      padding: 15px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #f5c542;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background: #d4af37;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to La Pasta Bella</h1>
+    <p>Delicious flavors, unforgettable moments</p>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\wine.png" alt="Wine">
+      <h3>Wine</h3>
+      <p>Finest Italian wines</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\pasta.png" alt="Pasta">
+      <h3>Pasta</h3>
+      <p>Handmade with love</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\buritto.png" alt="Burrito">
+      <h3>Burrito</h3>
+      <p>Fusion flavors</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\pizza.png" alt="Pizza">
+      
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\pizza1.png">
+
+      <h3>Pizza</h3>
+      <p>Wood-fired perfection</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\softdrink.png" alt="Soft Drink">
+      <img src="C:\Users\LENOVO\Desktop\laaa pasta bella\sprit.png">
+      <h3>Soft Drink</h3>
+      <p>Refreshing and cool</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="location.href='menu.html'">Explore Our Menu</button>
+  </div>
+</body>
+</html>

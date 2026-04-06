@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>La Pasta Bella</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #000000, #004d4d, #8d4a43, #ff7043);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4em;
+      text-shadow: 0 0 25px rgba(255,255,255,0.9);
+      animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    
+    .ribbon {
+      display: inline-block;
+      background: #f5c542; /* gold */
+      color: #000;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6em;
+      padding: 15px 40px;
+      margin-top: 20px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      border-radius: 5px;
+      animation: shimmer 5s infinite;
+    }
+    .ribbon::before, .ribbon::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 25px;
+      height: 100%;
+      background: #d4af37; /* darker gold ends */
+    }
+    .ribbon::before {
+      left: -25px;
+      clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    }
+    .ribbon::after {
+      right: -25px;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+    @keyframes shimmer {
+      0% {box-shadow: 0 0 15px rgba(255,255,255,0.3);}
+      50% {box-shadow: 0 0 25px rgba(255,255,255,0.6);}
+      100% {box-shadow: 0 0 15px rgba(255,255,255,0.3);}
+    }
+
+    /* Diamond Button */
+    .diamond-btn {
+      margin-top: 40px;
+      width: 180px;
+      height: 180px;
+      background: linear-gradient(45deg, #ff7043, #d2691e, #004d4d);
+      border: none;
+      cursor: pointer;
+      transform: rotate(45deg);
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .diamond-btn span {
+      display: inline-block;
+      transform: rotate(-45deg);
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .diamond-btn:hover {
+      transform: rotate(45deg) scale(1.1);
+      background: linear-gradient(45deg, #004d4d, #1565c0, #ff7043);
+      box-shadow: 0 0 30px rgba(255,255,255,0.7);
+    }
+
+    .icon {
+      position: absolute;
+      font-size: 5em;
+      opacity: 0.2;
+      animation: drift 10s linear infinite;
+    }
+    @keyframes drift {
+      from {transform: translateY(100vh) rotate(0deg);}
+      to {transform: translateY(-20vh) rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="icon" style="left:10%; animation-delay:0s;">🍷</div>
+  <div class="icon" style="left:35%; animation-delay:2s;">🍝</div>
+  <div class="icon" style="left:60%; animation-delay:4s;">🍕</div>
+  <div class="icon" style="left:80%; animation-delay:6s;">🥖</div>
+
+
+  <h1>🍝 La Pasta Bella</h1>
+  <div class="ribbon">Step inside and savor the experience...</div>
+  <button class="diamond-btn" onclick="location.href='home.html'">
+    <span>Begin Your Italian Journey</span>
+  </button>
+</body>
+</html>

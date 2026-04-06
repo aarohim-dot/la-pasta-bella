@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - La Pasta Bella</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #8d4a43, #ff7043);
+      background-size: 400% 400%;
+      animation: bgShift 15s ease infinite;
+      color: white;
+    }
+    @keyframes bgShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      text-align: center;
+      padding: 50px;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3em;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    }
+    .menu-section {
+      padding: 40px;
+      text-align: center;
+    }
+    .menu-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: rgba(0,0,0,0.6);
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .price {
+      font-weight: bold;
+      color: #f5c542;
+      margin-top: 5px;
+    }
+    .cta {
+      text-align: center;
+      margin: 40px;
+    }
+    .cta button {
+      padding: 15px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #f5c542;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background: #d4af37;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <p>Explore our vegetarian and non‑vegetarian delights</p>
+  </header>
+
+  <!-- Vegetarian Section -->
+  <div class="menu-section">
+    <h2>Vegetarian</h2>
+    <div class="cards">
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\veg-pasta.png" alt="Veg Pasta"><h3>Veg Pasta</h3><p>Fresh veggies & herbs</p><div class="price">₹250</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\panner-pizza.png" alt="Paneer Pizza"><h3>Paneer Pizza</h3><p>Cheesy delight with paneer</p><div class="price">₹300</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\veg-burrito.png" alt="Veg Burrito"><h3>Veg Burrito</h3><p>Stuffed with beans & veggies</p><div class="price">₹280</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\salad.png" alt="Salad"><h3>Garden Salad</h3><p>Crisp greens & dressing</p><div class="price">₹200</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\veg-lasagna.png" alt="Veg Lasagna"><h3>Veg Lasagna</h3><p>Layered pasta & cheese</p><div class="price">₹320</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\garlic-bread.png" alt="Garlic Bread"><h3>Garlic Bread</h3><p>Toasted with butter</p><div class="price">₹150</div></div>
+    </div>
+  </div>
+
+  <!-- Non-Vegetarian Section -->
+  <div class="menu-section">
+    <h2>Non‑Vegetarian</h2>
+    <div class="cards">
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\chicken-pasta.png" alt="Chicken Pasta"><h3>Chicken Pasta</h3><p>Rich creamy sauce</p><div class="price">₹350</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\pepperoni-pizza.png" alt="Pepperoni Pizza"><h3>Pepperoni Pizza</h3><p>Spicy & cheesy</p><div class="price">₹400</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\chicken-burrito.png" alt="Chicken Burrito"><h3>Chicken Burrito</h3><p>Juicy chicken & spices</p><div class="price">₹320</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\fish-fry.png" alt="Fish Fry"><h3>Fish Fry</h3><p>Crispy golden fish</p><div class="price">₹380</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\mutton-curry.png" alt="Mutton Curry"><h3>Mutton Curry</h3><p>Slow cooked spices</p><div class="price">₹450</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\chicken-wings.png" alt="Chicken Wings"><h3>Chicken Wings</h3><p>Spicy & tangy</p><div class="price">₹300</div></div>
+    </div>
+  </div>
+
+  <!-- Drinks Section -->
+  <div class="menu-section">
+    <h2>Drinks</h2>
+    <div class="cards">
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\wine1.png" alt="Wine"><h3>Wine</h3><p>Finest Italian wines</p><div class="price">₹500</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\softdrinks.png" alt="Soft Drink"><h3>Soft Drink</h3><p>Refreshing and cool</p><div class="price">₹100</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\coffee.png" alt="Coffee"><h3>Coffee</h3><p>Freshly brewed</p><div class="price">₹120</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\tea.png" alt="Tea"><h3>Tea</h3><p>Classic Indian chai</p><div class="price">₹80</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\mocktail.png" alt="Mocktail"><h3>Mocktail</h3><p>Fruity & refreshing</p><div class="price">₹180</div></div>
+      <div class="card"><img src="C:\Users\LENOVO\Desktop\laaa pasta bella\juice.png" alt="Juice"><h3>Fruit Juice</h3><p>Seasonal fresh juice</p><div class="price">₹150</div></div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="location.href='reservation.html'">Reserve a Table</button>
+  </div>
+</body>
+</html>
